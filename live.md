@@ -1,11 +1,11 @@
 ### 登录流程
-* 客户端->展游sdk -- 得到登录session ->uc服务器 - 得到uctoken ->直播服务器
+客户端->展游sdk -- 得到登录session ->uc服务器 - 得到uctoken ->直播服务器
 ### 服务器url
-* uc服务器 http://42.62.78.20/uc.live.com/index.php
-* 直播服务器 http://42.62.78.20:9501/
-* 支付服务器 http://42.62.78.20/pay.live.com/index.php
+uc服务器 http://42.62.78.20/uc.live.com/index.php
+直播服务器 http://42.62.78.20:9501/
+支付服务器 http://42.62.78.20/pay.live.com/index.php
 ### No.1接口说明
-* 请求uc服务器得到uctoken
+请求uc服务器得到uctoken
 ### No.1请求地址
 http://42.62.78.20/uc.live.com/index.php?c=userzc&m=login
 ### No.1请求参数
@@ -690,8 +690,8 @@ http://42.62.78.20:9501/?c=member&m=update_info
 }
 ```
 ### No.19接口说明
-* 修改头像
-* 注意url和其他的不一样
+修改头像
+注意url和其他的不一样
 ### No.19请求地址
 http://update.bdwsw.zhanchenggame.com/index.php?c=liveimg&m=upload
 ### No.19请求参数
@@ -711,7 +711,7 @@ http://update.bdwsw.zhanchenggame.com/index.php?c=liveimg&m=upload
 }
 ```
 ### No.20接口说明
-* 搜索功能
+搜索功能
 ### No.20请求地址
 http://42.62.78.20:9501/?c=member&m=search
 ### No.19请求参数
@@ -802,9 +802,9 @@ http://42.62.78.20:9501/?c=friend&m=get_my_friend_list
 }
 ```
 ### No.23接口说明
-* 创建支付订单
-* 注意 此接口地址与其他地址不同
-* 充值回调地址 http://42.62.78.20/pay.live.com/index.php?c=payzc&m=confirm_zcpay
+创建支付订单
+注意 此接口地址与其他地址不同
+充值回调地址 http://42.62.78.20/pay.live.com/index.php?c=payzc&m=confirm_zcpay
 ### No.23请求地址
 http://42.62.78.20/pay.live.com/index.php?c=payzc&m=create_prepay_order
 ### No.23请求参数
@@ -827,7 +827,7 @@ http://42.62.78.20/pay.live.com/index.php?c=payzc&m=create_prepay_order
 }
 ```
 ### No.24接口说明
-* 检查订单状态
+检查订单状态
 ### No.24请求地址
 http://42.62.78.20:9501/?c=recharge&m=get_order_status
 ### No.24请求参数
@@ -853,7 +853,7 @@ http://42.62.78.20:9501/?c=recharge&m=get_order_status
 }
 ```
 ### No.25接口说明
-* 举报
+举报
 ### No.25请求地址
 http://42.62.78.20:9501/?c=member&m=report
 ### No.25请求参数
@@ -871,7 +871,7 @@ http://42.62.78.20:9501/?c=member&m=report
 }
 ```
 ### No.26接口说明
-* 发送喇叭
+发送喇叭
 ### No.26请求地址
 http://42.62.78.20:9501/?c=chat&m=send_horn
 ### No.26请求参数
@@ -893,7 +893,7 @@ http://42.62.78.20:9501/?c=chat&m=send_horn
 }
 ```
 ### No.27接口说明
-* 手机注册 初始化用户信息
+手机注册 初始化用户信息
 ### No.27请求地址
 http://42.62.78.20:9501/?c=member&m=reg_info
 ### No.27请求参数
@@ -941,7 +941,7 @@ http://42.62.78.20:9501/?c=member&m=reg_info
 }
 ```
 ### No.28接口说明
-* 初始化直播房间，在start_live 接口前请求
+初始化直播房间，在start_live 接口前请求
 ### No.28请求地址
 http://42.62.78.20:9501/?c=live&m=create_live
 ### No.28请求参数
@@ -958,7 +958,7 @@ http://42.62.78.20:9501/?c=live&m=create_live
 ```
 
 ### No.29接口说明
-* 启动应用时请求的第一个接口，获得启动界面大图、登录提示，和当前版本审核状态
+启动应用时请求的第一个接口，获得启动界面大图、登录提示，和当前版本审核状态
 ### No.29请求地址
 http://42.62.78.20:9501/?c=liveinit&m=check_version
 ### No.29请求参数
@@ -988,7 +988,7 @@ http://42.62.78.20:9501/?c=liveinit&m=check_version
 }
 ```
 ### No.30接口说明
-* 管理员账号所属菜单  置顶、取消置顶
+管理员账号所属菜单  置顶、取消置顶
 ### No.30请求地址
 http://42.62.78.20:9501/?c=alive&m=live_top&d=admin
 ### No.30请求参数
@@ -1006,7 +1006,7 @@ http://42.62.78.20:9501/?c=alive&m=live_top&d=admin
 }
 ```
 ### No.31接口说明
-* 管理员账号所属菜单  关闭直播
+管理员账号所属菜单  关闭直播
 ### No.31请求地址
 http://42.62.78.20:9501/?c=alive&m=live_close&d=admin
 ### No.31请求参数
@@ -1023,7 +1023,7 @@ http://42.62.78.20:9501/?c=alive&m=live_close&d=admin
 }
 ```
 ### No.32接口说明
-* 管理员账号所属菜单  禁播、隐藏、通过审核、封号
+管理员账号所属菜单  禁播、隐藏、通过审核、封号
 ### No.32请求地址
 http://42.62.78.20:9501/?c=user&m=update_player_info&d=admin
 ### No.32请求参数
@@ -1041,7 +1041,7 @@ http://42.62.78.20:9501/?c=user&m=update_player_info&d=admin
 }
 ```
 ### No.33接口说明
-* 夜票兑换钻石
+夜票兑换钻石
 ### No.33请求地址
 http://42.62.78.20:9501/?c=recharge&m=change_diamond
 ### No.33请求参数
@@ -1065,7 +1065,7 @@ http://42.62.78.20:9501/?c=recharge&m=change_diamond
 }
 ```
 ### No.34接口说明
-* 微信红包/兑换钻石  兑换记录
+微信红包/兑换钻石  兑换记录
 ### No.34请求地址
 http://42.62.78.20:9501/?c=recharge&m=get_change_log
 ### No.34请求参数
@@ -1107,8 +1107,8 @@ http://42.62.78.20:9501/?c=recharge&m=get_change_log
 }
 ```
 ### No.35接口说明
-* 获取支付的订单列表
-* 注意请求的服务器不同
+获取支付的订单列表
+注意请求的服务器不同
 ### No.35请求地址
 http://42.62.78.20/pay.live.com/index.php?c=ios&m=get_product_list
 ### No.35请求参数
@@ -1174,7 +1174,7 @@ http://42.62.78.20/pay.live.com/index.php?c=ios&m=get_product_list
 }
 ```
 ### No.36接口说明
-* 管理员账号所属菜单  推荐、取消推荐
+管理员账号所属菜单  推荐、取消推荐
 ### No.36请求地址
 http://42.62.78.20:9501/?c=alive&m=live_recommended&d=admin
 ### No.36请求参数
@@ -1192,7 +1192,7 @@ http://42.62.78.20:9501/?c=alive&m=live_recommended&d=admin
 }
 ```
 ### No.37接口说明
-* 管理员发送警告 
+管理员发送警告 
 ### No.37请求地址
 http://42.62.78.20:9501/?c=user&m=send_msg_to_user&d=admin
 ### No.37请求参数
@@ -1209,7 +1209,7 @@ http://42.62.78.20:9501/?c=user&m=send_msg_to_user&d=admin
 }
 ```
 ### No.38接口说明
-* 歌曲搜索
+歌曲搜索
 ### No.38请求地址
 http://42.62.78.20:9501/?c=music&m=search
 ### No.38请求参数
@@ -1241,7 +1241,7 @@ http://42.62.78.20:9501/?c=music&m=search
 }
 ```
 ### No.39 接口说明
-* 实名认证
+实名认证
 ### No.39请求地址
 http://42.62.78.20:9501/?c=member&m=certification
 ### No.39请求参数
@@ -1264,7 +1264,7 @@ var re={
 ```
 
 ### No.40接口说明
-* 发布圈子
+发布圈子
 ### No.40请求地址
 http://42.62.78.20:9501/?c=circle&m=add_circle
 ### No.40请求参数
@@ -1282,7 +1282,7 @@ http://42.62.78.20:9501/?c=circle&m=add_circle
 }
 ```
 ### No.41接口说明
-* 点赞
+点赞
 ### No.41请求地址
 http://42.62.78.20:9501/?c=circle&m=feed_support
 ### No.41请求参数
@@ -1296,33 +1296,43 @@ http://42.62.78.20:9501/?c=circle&m=feed_support
 ### No.41返回值
 ```sh
     var re = {
-    "status": 1,//1 点赞成功，-1参数错误
-    "uid" : '', //一条信息所有点赞用户
+    "status": 1,//1-点赞成功  -1点赞失败  2取消点赞
 }
 ```
 ### No.42接口说明
-* 圈子评论
+圈子评论
 ### No.42请求地址
 http://42.62.78.20:9501/?c=circle&m=comment
 ### No.42请求参数
 ``` sh
   var param = {
     "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
-    "uid" : '', //当前用户id
     "cid" : '', //被评论信息id
-    "msg" : '', //评论内容
-    "mid" : '', //被评论者id
+    "content" : '', //评论内容
+    "uid" : '', //被评论者id
   }
 ```
 ### No.42返回值
 ```sh
     var re = {
-    "status": 1,//1 评论成功，-1参数错误
-    "" : '', //
+    "status":1,//1评论成功 -1参数错误 -2被评论信息不存在
+    "comment_info":
+   {
+	"id":"107",//自增id
+	"cid":"1",//圈子id
+	"from":"4904958",//评论者id
+	"from_name":"张苏宁",//评论者名字
+	"to":"4904960",//被评论者id
+	"to_name":"李四",//被评论者名字
+	"msg":"天气很好哦",//评论内容
+	"dateline":"1476162623",//评论发送时间
+	"day":"20161011"//评论发送日期
+    }
 }
+
 ```
 ### No.43接口说明
-* 获取用户首页最新好友圈子信息
+获取用户首页最新好友圈子信息
 ### No.43请求地址
 http://42.62.78.20:9501/?c=circle&m=group_index
 ### No.43请求参数
@@ -1350,4 +1360,30 @@ var re = {
     "allpage":4,//总页数
     "new_dateline":1476152287//当前时间戳
     }
+```
+### No.44接口说明
+一条feed详细信息
+### No.44请求地址
+http://42.62.78.20:9501/?c=circle&m=feed_info
+### No.44请求参数
+``` sh
+  var param = {
+    "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
+    "cid" : '', //cid 当前信息id
+  }
+```
+### No.44返回值
+```sh
+var re = {
+    "status":1, 1成功 -1feed不存在或被删除
+    "feed_info": {
+	"cid":"1",//记录id
+	"uid":"4904958",//用户id
+	"img_list":"0",//图片列表
+	"msg":"霜叶红于二月花",//文字内容
+	"from":"0",//是否转发，默认为0
+	"dateline":"1476089612",//内容发布时间
+	"day":"20161010"//内容发布日期
+     }
+}
 ```
