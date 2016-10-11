@@ -1217,6 +1217,7 @@ http://42.62.78.20:9501/?c=music&m=search
   var param = {
     "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
     "str" : 'a', //要搜索的歌名，拼音 首字母都行 
+    "p" :   1,//页数
   }
 ```
 ### No.38返回值
@@ -1237,5 +1238,27 @@ http://42.62.78.20:9501/?c=music&m=search
     "pn": 10,//当前页数
     "rn": 20,//每页显示条数
     "hit": 2001//总条数
+}
+```
+### No.39 接口说明
+* 实名认证
+### No.39请求地址
+http://42.62.78.20:9501/?c=member&m=certification
+### No.39请求参数
+```sh
+  var param{
+	"uid" :	4904656,//用户uid
+    "token" :	"wi6tLQ4CEMC_va-4vZ02iw",//用户token
+    "name"	:	"哇haha",//真实姓名,长度不大于20
+    "phone"	:	15662137729,//用户手机
+    "id_number"	:	"460003199909010050",//身份证号码
+    "img"	:	"http://cdn.bdwsw.zhanchenggame.com/liveimg/icon/girl11.jpg",//手持身份证照片地址
+    "auth_name"	:	0,	//认证名称
+  }
+```
+### No.39 返回值
+```
+var re={
+	"status": 1,// 1成功,-1参数错误,-2认证过了,-3名字为空,-4名字过长,-5手机号不正确,-6身份证号吗不对,-7手持身份证证件照不能为空,-8插入失败,-9更新失败
 }
 ```
