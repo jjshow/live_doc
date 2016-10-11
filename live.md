@@ -1289,8 +1289,8 @@ http://42.62.78.20:9501/?c=circle&m=feed_support
 ``` sh
   var param = {
     "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
-    "c_id" : '', //被点信息子id
-    "uid" : '', //信息所有点赞用户
+    "cid" : '', //被点信息子id
+    "type" : 1, //1点赞 ，0取消 
   }
 ```
 ### No.41返回值
