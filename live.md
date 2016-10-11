@@ -1247,18 +1247,107 @@ http://42.62.78.20:9501/?c=member&m=certification
 ### No.39请求参数
 ```sh
   var param{
-	"uid" :	4904656,//用户uid
-    "token" :	"wi6tLQ4CEMC_va-4vZ02iw",//用户token
-    "name"	:	"哇haha",//真实姓名,长度不大于20
-    "phone"	:	15662137729,//用户手机
-    "id_number"	:	"460003199909010050",//身份证号码
-    "img"	:	"http://cdn.bdwsw.zhanchenggame.com/liveimg/icon/girl11.jpg",//手持身份证照片地址
-    "auth_name"	:	0,	//认证名称
+    "uid" : 4904656,//用户uid
+    "token" :   "wi6tLQ4CEMC_va-4vZ02iw",//用户token
+    "name"  :   "哇haha",//真实姓名,长度不大于20
+    "phone" :   15662137729,//用户手机
+    "id_number" :   "460003199909010050",//身份证号码
+    "img"   :   "http://cdn.bdwsw.zhanchenggame.com/liveimg/icon/girl11.jpg",//手持身份证照片地址
+    "auth_name" :   0,  //认证名称
   }
 ```
 ### No.39 返回值
 ```
 var re={
-	"status": 1,// 1成功,-1参数错误,-2认证过了,-3名字为空,-4名字过长,-5手机号不正确,-6身份证号吗不对,-7手持身份证证件照不能为空,-8插入失败,-9更新失败
+    "status": 1,// 1成功,-1参数错误,-2认证过了,-3名字为空,-4名字过长,-5手机号不正确,-6身份证号吗不对,-7手持身份证证件照不能为空,-8插入失败,-9更新失败
 }
+```
+
+### No.40接口说明
+* 发布圈子
+### No.40请求地址
+http://42.62.78.20:9501/?c=circle&m=add_circle
+### No.40请求参数
+``` sh
+  var param = {
+    "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
+    "img" : '', //图片路径
+    "msg" : '', //发表圈子信息
+  }
+```
+### No.40返回值
+```sh
+    var re = {
+    "status": 1,//1 发送成功，-1发送失败 
+}
+```
+### No.41接口说明
+* 点赞
+### No.41请求地址
+http://42.62.78.20:9501/?c=circle&m=feed_support
+### No.41请求参数
+``` sh
+  var param = {
+    "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
+    "c_id" : '', //被点信息子id
+    "uid" : '', //信息所有点赞用户
+  }
+```
+### No.41返回值
+```sh
+    var re = {
+    "status": 1,//1 点赞成功，-1参数错误
+    "uid" : '', //一条信息所有点赞用户
+}
+```
+### No.42接口说明
+* 圈子评论
+### No.42请求地址
+http://42.62.78.20:9501/?c=circle&m=comment
+### No.42请求参数
+``` sh
+  var param = {
+    "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
+    "uid" : '', //当前用户id
+    "cid" : '', //被评论信息id
+    "msg" : '', //评论内容
+    "mid" : '', //被评论者id
+  }
+```
+### No.42返回值
+```sh
+    var re = {
+    "status": 1,//1 评论成功，-1参数错误
+    "" : '', //
+}
+```
+### No.43接口说明
+* 获取用户首页最新好友圈子信息
+### No.43请求地址
+http://42.62.78.20:9501/?c=circle&m=group_index
+### No.43请求参数
+``` sh
+  var param = {
+    "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
+    "uid" : '', //当前用户id
+    "page" :当前页默认为1
+  }
+```
+### No.43返回值
+```sh
+var re = { 
+    "status":1,
+    "list":[
+          {
+            "cid":"75",//最新信息id
+            "uid":"4904958",//当前用户
+            "img_list":"0",//图片
+            "msg":"0",//信息内容
+            "dateline":"1476092292",//发布时间
+            "day":"20161010"//发布日期
+           }
+    ],
+    "allpage":4,//总页数
+    "new_dateline":1476152287//当前时间戳
+    }
 ```
