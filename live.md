@@ -1340,7 +1340,7 @@ http://42.62.78.20:9501/?c=circle&m=group_index
   var param = {
     "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
     "uid" : '', //当前用户id
-    "fuid"://圈子id
+    "fuid"://关注人id
     "page" :当前页默认为1
   }
 ```
