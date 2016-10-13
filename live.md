@@ -1266,7 +1266,7 @@ var re={
 ### No.40接口说明
 发布圈子
 ### No.40请求地址
-http://42.62.78.20:9501/?c=circle&m=add_circle
+http://106.75.51.187:9501/?c=circle&m=add_circle
 ### No.40请求参数
 ``` sh
   var param = {
@@ -1284,7 +1284,7 @@ http://42.62.78.20:9501/?c=circle&m=add_circle
 ### No.41接口说明
 点赞
 ### No.41请求地址
-http://42.62.78.20:9501/?c=circle&m=feed_support
+http://106.75.51.187:9501/?c=circle&m=feed_support
 ### No.41请求参数
 ``` sh
   var param = {
@@ -1302,7 +1302,7 @@ http://42.62.78.20:9501/?c=circle&m=feed_support
 ### No.42接口说明
 圈子评论
 ### No.42请求地址
-http://42.62.78.20:9501/?c=circle&m=comment
+http://106.75.51.187:9501/?c=circle&m=comment
 ### No.42请求参数
 ``` sh
   var param = {
@@ -1334,13 +1334,12 @@ http://42.62.78.20:9501/?c=circle&m=comment
 ### No.43接口说明
 获取用户首页最新好友圈子信息
 ### No.43请求地址
-http://42.62.78.20:9501/?c=circle&m=group_index
+http://106.75.51.187:9501/?c=circle&m=group_index
 ### No.43请求参数
 ``` sh
   var param = {
     "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
     "uid" : '', //当前用户id
-    "fuid"://关注人id
     "page" :当前页默认为1
   }
 ```
