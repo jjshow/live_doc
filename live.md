@@ -1290,20 +1290,18 @@ http://106.75.51.187:9501/?c=circle&m=feed_support
   var param = {
     "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
     "cid" : '', //被点信息子id
-    "type" : 1, //1点赞 ，0取消 
   }
 ```
 ### No.41返回值
 ```sh
     var re = {
-    "status": 1,//1-点赞成功  -1点赞失败  2取消点赞 -2重复不能点赞
-    "status":1,
-    "uidlist":
-  {
-   "cid":9,//被点赞信息id
-   "uid":["560348,6560344"]//点赞用户
-   "count":点赞总人数
-  }
+    "nickname":[//点赞人列表
+        "抛砖引喻",
+        "妖妖",
+        "何北"
+    ],
+    "count":3,//点赞人总数
+    "status":1// 1 成功点赞 -1点赞失败 -2重复不能点赞
 }
 ```
 ### No.42接口说明
@@ -1376,25 +1374,49 @@ http://106.75.51.187:9501/?c=circle&m=group_index
 ```
 ### No.43返回值
 ```sh
-var re = { 
+var re = {
     "status":1,
     "list":[
-          {
-            "cid":"75",//最新信息id
-            "uid":"4904958",//当前用户
-            "img_list":"0",//图片
-            "msg":"0",//信息内容
-            "dateline":"1476092292",//发布时间
-            "day":"20161010",//发布日期
-	    "nickname",//昵称
-	    "sex",//性别
-	    "level",//等级
-	    "icon"//头像地址
-           }
+        {
+            "cid":"30",//记录id
+            "uid":"6560339",//发送人id
+            "img_list":"0",//图片路径
+            "msg":"天气很好哦",//内容圈子
+            "dateline":"1476091832",//发送时间
+            "day":"20161010",//发送日期
+            "nickname":"哈哈哈哈哈iokjnm",//发送人昵称
+            "sex":"0",//发送人性别
+            "level":"37",/发送人等级
+            "icon":"http://q.qlogo.cn/qqapp/1105577663/87635C0DAE2008CE513BA47C757C8F0A/100"//发送人头像地址
+        },
+        {
+            "cid":"22",
+            "uid":"6560339",
+            "img_list":"",
+            "msg":"0",
+            "dateline":"1476091798",
+            "day":"20161010",
+            "nickname":"抛砖引喻",
+            "sex":"0",
+            "level":2,
+            "icon":"http://q.qlogo.cn/qqapp/1105577663/CC81E153A21134578B3F916520481992/100"
+        },
+        {
+            "cid":"19",
+            "uid":"6560344",
+            "img_list":"1231",
+            "msg":"12312321",
+            "dateline":"1476091759",
+            "day":"20161010",
+            "nickname":"何东",
+            "sex":"0",
+            "level":"19",
+            "icon":"http://q.qlogo.cn/qqapp/1105640374/3FA522C6CDF546231EAF87952AC4AD99/100"
+        }
     ],
-    "allpage":4,//总页数
-    "new_dateline":1476152287//当前时间戳
-    }
+    "allpage":1,
+    "new_dateline":1476774282
+}
 ```
 ### No.44接口说明
 一条feed详细信息
