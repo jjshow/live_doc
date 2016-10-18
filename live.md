@@ -1460,7 +1460,7 @@ http://42.62.78.20:9501/?c=circle&m=all_comment
 ### No.45返回值
 ```sh
 var re = {
-     "list":[
+    "list":[
         {
             "id":"177",//自增id
             "cid":"2",//圈子id
@@ -1528,6 +1528,7 @@ var re = {
             "day":"20161011"
         }
     ],
-    "allpage":1
+    "allpage":1,
+    "count":6
 }
 ```
