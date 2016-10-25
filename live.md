@@ -1279,6 +1279,18 @@ http://106.75.51.187:9501/?c=circle&m=add_circle
 ```sh
     var re = {
     "status": 1,//1 发送成功，-1发送失败 
+    "list":{
+        "cid":"286",//记录id
+        "uid":"6560360",//用户id
+        "img_list":[//发送图片列表
+            "http://imgcdn.live.jjshowtime.com/cdn/liveimg/circle/4cae6f0917f78c1ca6d555b4df03c215110[256x456].jpg",
+            "http://imgcdn.live.jjshowtime.com/cdn/liveimg/circle/cc5089e7df06601a56be683855adcada439[256x456].jpg"; "
+        ],
+        "msg":"斯蒂芬必胜客",//发送内容
+        "from":"0",//是否转发，转发谁的
+        "dateline":"1477364185",//内容发布时间
+        "day":"20161025"//内容发布日期
+    }
 }
 ```
 ### No.41接口说明
@@ -1378,45 +1390,94 @@ var re = {
     "status":1,
     "list":[
         {
-            "cid":"30",//记录id
-            "uid":"6560339",//发送人id
-            "img_list":"0",//图片路径
-            "msg":"天气很好哦",//内容圈子
-            "dateline":"1476091832",//发送时间
-            "day":"20161010",//发送日期
-            "nickname":"哈哈哈哈哈iokjnm",//发送人昵称
-            "sex":"0",//发送人性别
-            "level":"37",/发送人等级
-            "icon":"http://q.qlogo.cn/qqapp/1105577663/87635C0DAE2008CE513BA47C757C8F0A/100"//发送人头像地址
-        },
+            "cid":"285",//记录id
+            "uid":"6560405",//发送人id
+            "img_list":[//图片路径
+                "http://imgcdn.live.3-6-5.com.cn/cdn/liveimg/circle/1dcd4d0ebd21174f5ccfddd8cac46799275[600x360].jpg",
+                "http://imgcdn.live.3-6-5.com.cn/cdn/liveimg/circle/1030443285427241f0779cbed55e991c301[220x220].jpg"
+            ],
+            "msg":"两站图了回家了更好哦",//内容圈子
+            "dateline":"1477134628",//发送时间
+            "day":"20161022",//发送日期
+            "new_comment":[//最新三条评论
+                {
+                    "id":"92",
+                    "cid":"281",
+                    "from_id":"6560344",
+                    "from_name":"酱油",
+                    "to_id":"4904958",
+                    "to_name":"洋洋",
+                    "msg":"zhanyou_solo",
+                    "dateline":"1476161341",
+                    "day":"20161011"
+                },
+                {
+                    "id":"91",
+                    "cid":"281",
+                    "from_id":"6560343",
+                    "from_name":"鞍山",
+                    "to_id":"4904958",
+                    "to_name":"张三",
+                    "msg":"zhanyou_solo",
+                    "dateline":"1476161340",
+                    "day":"20161011"
+                }
+            ],
+            "support_name":[//点赞人列表
+                "Happy",
+                "张三",
+                "李素",
+                "王五"
+            ],
+            "nickname":"Joker",//昵称
+            "sex":"0",//性别
+            "level":"21",//等级
+            "icon":"http://wx.qlogo.cn/mmopen/iamWTxD7icPPdZ1A41ViaraoVicPDJRoFQyhR407wcoCvNhYc7GpbQiaGa51picUVhnuR7lqJTOjYybdeO74gbtJ1HBA/0"
+        },//头像
         {
-            "cid":"22",
-            "uid":"6560339",
-            "img_list":"",
-            "msg":"0",
-            "dateline":"1476091798",
-            "day":"20161010",
-            "nickname":"抛砖引喻",
+            "cid":"281",
+            "uid":"6560405",
+            "img_list":[
+                "http://imgcdn.live.jjshowtime.com/cdn/liveimg/circle/29f678546c8db1c345f2db89b1add5ff912[360x360].jpg"
+            ],
+            "msg":"(⊙o⊙)?",
+            "dateline":"1477034778",
+            "day":"20161021",
+            "new_comment":[
+                {
+                    "id":"92",
+                    "cid":"281",
+                    "from_id":"6560344",
+                    "from_name":"酱油",
+                    "to_id":"4904958",
+                    "to_name":"洋洋",
+                    "msg":"zhanyou_solo",
+                    "dateline":"1476161341",
+                    "day":"20161011"
+                },
+                {
+                    "id":"91",
+                    "cid":"281",
+                    "from_id":"6560343",
+                    "from_name":"里杰",
+                    "to_id":"4904958",
+                    "to_name":"立新",
+                    "msg":"zhanyou_solo",
+                    "dateline":"1476161340",
+                    "day":"20161011"
+                }
+            ],
+            "support_name":[
+                "谔谔",
+                "Happy",
+                "东方",
+                "吖吖"
+            ],
+            "nickname":"Joker",
             "sex":"0",
-            "level":2,
-            "icon":"http://q.qlogo.cn/qqapp/1105577663/CC81E153A21134578B3F916520481992/100"
-        },
-        {
-            "cid":"19",
-            "uid":"6560344",
-            "img_list":"1231",
-            "msg":"12312321",
-            "dateline":"1476091759",
-            "day":"20161010",
-            "nickname":"何东",
-            "sex":"0",
-            "level":"19",
-            "icon":"http://q.qlogo.cn/qqapp/1105640374/3FA522C6CDF546231EAF87952AC4AD99/100"
+            "level":"21",
+            "icon":"http://wx.qlogo.cn/mmopen/iamWTxD7icPPdZ1A41ViaraoVicPDJRoFQyhR407wcoCvNhYc7GpbQiaGa51picUVhnuR7lqJTOjYybdeO74gbtJ1HBA/0"
         }
-    ],
-    "allpage":1,
-    "new_dateline":1476774282
-}
 ```
 ### No.44接口说明
 一条feed详细信息
