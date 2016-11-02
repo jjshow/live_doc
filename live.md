@@ -1594,3 +1594,21 @@ var re = {
     "count":6
 }
 ```
+### No.46接口说明
+删除一条圈子
+### No.44请求地址
+http://42.62.78.20:9501/?c=circle&m=del_circle
+### No.44请求参数
+``` sh
+  var param = {
+    "token"  : 'qCxHTPsD1k_XJxo43eQenQ',//用户token
+    "cid" : '', //cid 当前圈子id
+  }
+```
+### No.44返回值
+```sh
+var re = {
+    "status":1, 1成功 0失败
+    
+}
+```
