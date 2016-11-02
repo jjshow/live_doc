@@ -1524,7 +1524,7 @@ http://42.62.78.20:9501/?c=circle&m=all_comment
 var re = {
     "list":[
         {
-            "id":"177",//自增id
+           "id":"177",//自增id
             "cid":"2",//圈子id
             "from_id":"4904739",//评论者id
             "from_name":"111",//评论者名字
@@ -1533,65 +1533,23 @@ var re = {
             "msg":"今天是周一",//评论内容
             "dateline":"1476698104",//评论发送时间
             "day":"20161017"//评论发送日期
-        },
-        {
-            "id":"108",
-            "cid":"2",
-            "from_id":"4904739",
-            "from_name":"111",
-            "to_id":"6560370",
-            "to_name":"포기해 °",
-            "msg":"今天是周一",
-            "dateline":"1476684635",
-            "day":"20161017"
-        },
-        {
-            "id":"107",
-            "cid":"1",
-            "from_id":"4904958",
-            "from_name":"马杰",
-            "to_id":"4904960",
-            "to_name":"喻临峰",
-            "msg":"农夫山泉",
-            "dateline":"1476162623",
-            "day":"20161011"
+            "icon":"http://q.qlogo.cn/qqapp/1105640374/2413F3FD4F9A7716A729480E030EDA54/100"//头像
         },
         {
             "id":"95",
-            "cid":"1",
-            "from_id":"4904958",
+            "cid":"278",
+            "from_id":"6560400",
             "from_name":"马杰",
             "to_id":"4904960",
             "to_name":"喻临峰",
             "msg":"农夫山泉",
             "dateline":"1476162246",
-            "day":"20161011"
-        },
-        {
-            "id":"92",
-            "cid":"1",
-            "from_id":"4904958",
-            "from_name":"酱油",
-            "to_id":"4904958",
-            "to_name":"洋洋",
-            "msg":"zhanyou_solo",
-            "dateline":"1476161341",
-            "day":"20161011"
-        },
-        {
-            "id":"91",
-            "cid":"1",
-            "from_id":"4904958",
-            "from_name":"马杰",
-            "to_id":"4904958",
-            "to_name":"立新",
-            "msg":"zhanyou_solo",
-            "dateline":"1476161340",
-            "day":"20161011"
+            "day":"20161011",
+            "icon":"http://q.qlogo.cn/qqapp/1105577663/AA51A834D8AAA59306CDD41E691E99E7/100"
         }
     ],
-    "allpage":1,
-    "count":6
+    "allpage":2,
+    "count":10
 }
 ```
 ### No.46接口说明
